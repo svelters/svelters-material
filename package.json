@@ -1,0 +1,27 @@
+{
+  "name": "svelters-material",
+  "version": "0.1.0",
+  "description": "Svelte Material UI",
+  "keywords": [
+    "svelte",
+    "materialui",
+    "material",
+    "ui"
+  ],
+  "main": "src/index.js",
+  "author": "svelters",
+  "license": "MIT",
+  "repository": "github:svelters/svelters-material",
+  "scripts": {
+    "lint": "eslint_d src/ --ext .js --ext .svelte"
+  },
+  "peerDependencies": {
+    "svelte": "^3.12.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "eslint_d": "^8.0.0",
+    "svelte": "^3.12.1"
+  }
+}
