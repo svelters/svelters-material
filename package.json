@@ -13,15 +13,22 @@
   "license": "MIT",
   "repository": "github:svelters/svelters-material",
   "scripts": {
+    "storybook": "start-storybook __test__/storybook",
     "lint": "eslint_d src/ --ext .js --ext .svelte"
   },
   "peerDependencies": {
     "svelte": "^3.12.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.4",
     "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
     "eslint-plugin-svelte3": "^2.7.3",
     "eslint_d": "^8.0.0",
-    "svelte": "^3.12.1"
+    "svelte": "^3.12.1",
+    "svelte-loader": "^2.13.6"
+  },
+  "dependencies": {
+    "@storybook/svelte": "^5.2.5"
   }
 }
