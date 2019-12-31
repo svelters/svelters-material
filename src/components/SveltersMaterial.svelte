@@ -1,15 +1,4 @@
 <script>
-  import { setContext } from 'svelte'
-  import themeContext from '../themeContext'
-
-  export let themeConfig = {}
-
-  const config = {
-    primaryColor: '#ff0000',
-    ...themeConfig
-  }
-
-  setContext(themeContext, config)
 </script>
 
 <slot>
@@ -17,6 +6,7 @@
 
 <style global>
   :root {
-    --primary-color: '#ff0000';
+    --color-primary: #ff0000;
+    --color-secondary: #00ff00;
   }
 </style>

@@ -1,16 +1,17 @@
 <script>
-  import { getContext } from 'svelte'
-  import themeContext from '../themeContext'
-
-  const { primaryColor } = getContext(themeContext)
+    export let style = 'primary'
 </script>
 
-<button>
+<button class={style}>
   <slot></slot>
 </button>
 
 <style>
-  button {
-    background-color: ${primaryColor};
+  button.primary {
+    background-color: var(--color-primary);
+  }
+
+  button.secondary {
+    background-color: var(--color-secondary);
   }
 </style>
